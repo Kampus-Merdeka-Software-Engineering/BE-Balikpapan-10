@@ -1,4 +1,5 @@
 exports.register = (req, res) => {
+  res.send(req.body);
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
