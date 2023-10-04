@@ -24,7 +24,7 @@ async function createLesson(lesson) {
       },
     };
 
-    const createdLesson = await prisma.book.create(mappedLesson);
+    const createdLesson = await prisma.lesson.create(mappedLesson);
 
     return createdLesson;
   } catch (error) {
