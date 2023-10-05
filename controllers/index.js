@@ -1,5 +1,7 @@
-const lessonController = require("./lessonController");
+const lessonlistController = require("./lessonlistController");
+const teamController = require("./teamController");
 
 module.exports = {
-  lessonController,
+  lessonlistController,
+  teamController,
 };

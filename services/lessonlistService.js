@@ -1,20 +1,18 @@
 const { prisma } = require("../config/prisma");
 
-async function getAllLessons() {
+async function getLessonsList() {
   try {
     const lessons = await prisma.lesson.findMany();
-
     return lessons;
   } catch (error) {
     console.error(error);
-
     throw new Error();
   }
 }
 
-async function createLesson(lesson) {
+async function createLessonList(lesson) {
   try {
-    const mappedLesson = {
+    const createdLesson = await prisma.lesson.create({
       data: {
         title: lesson.title,
         description: lesson.description,
@@ -22,19 +20,15 @@ async function createLesson(lesson) {
         age: lesson.age,
         image: lesson.image,
       },
-    };
-
-    const createdLesson = await prisma.lesson.create(mappedLesson);
+    });
 
     return createdLesson;
   } catch (error) {
-    console.error(error);
-
-    throw new Error();
+    throw new Error(error);
   }
 }
 
 module.exports = {
-  getAllLessons,
-  createLesson,
+  getLessonsList,
+  createLessonList,
 };

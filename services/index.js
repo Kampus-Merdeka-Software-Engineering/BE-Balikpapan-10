@@ -1,5 +1,7 @@
-const lessonService = require("./lessonService");
+const lessonlistService = require("./lessonlistService");
+const teamService = require("./teamService");
 
 module.exports = {
-  lessonService,
+  lessonlistService,
+  teamService,
 };

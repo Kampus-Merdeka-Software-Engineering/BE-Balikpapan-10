@@ -1,3 +1,4 @@
-const lessonRoutes = require("./lessonRoutes");
+const lessonlistRoutes = require("./lessonListRoutes");
+const teamRoutes = require("./teamRoutes");
 
-module.exports = [lessonRoutes];
+module.exports = [lessonlistRoutes, teamRoutes];
