@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dancing+Script:wght@400;500&family=Lobster&family=Mogra&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Laptop */
+@media (max-width: 1366px) {
+html {
+  font-size: 75%;
+}
+}
+/* Tablet */
+@media (max-width: 768px) {
+html {
+  font-size: 62.5%;
+}
+}
+/* Handphone */
+@media (max-width: 576px) {
+html {
+  font-size: 55%;
+}
+}
+
+
+/*Banner*/
+
+.top{
+background-image: url(https://cdn.wallpapersafari.com/63/25/lLIYKM.jpg);
+color: rgba(123, 67, 155, 0.63);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+font-size: 40px;
+height: 500px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+.top {
+  height: fit-content;
+}
+}
+/* Handphone */
+@media (max-width: 576px) {
+.top {
+  height: fit-content;
+}
+}
+
+.top details {
+margin-top: 0px;
+}
+
+.welbes{
+  font-family: 'Roboto', sans-serif;
+  text-shadow: #ffffff;
+  margin-left: 30px;
+  display: flex;
+}
+.toptext{
+  padding-top: 40px;
+}
+.mono{
+  width: 400px;
+  margin-left: 40px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.topBtn{
+background-color: #bd8dcc;
+padding: 16px;
+color: rgb(255, 255, 255);
+border-color: white;
+border-style: solid;
+border-radius: 18px;
+font-size: 15px;
+margin-left: 40px;
+margin-top: 20px;
+margin-bottom: 24px;
+width: 150px;
+text-align: center;
+}
+
+.topBtn:hover{
+cursor: pointer;
+}
+
+
+/* About EduTen*/
+
+.info{
+  background-color: rgb(255, 184, 92);
+  max-height: fit-content;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  text-shadow: #5c5757;
+  margin-top: 0px;
+}
+
+.info img {
+  width: 280px;
+  height: 200px; 
+}
+
+.tittleinfo{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px
+}
+
+.infotext{
+  padding-left: 40px;
+  width: fit-content;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+.adesc {
+  width: 80.5%;
+}
+.info img {
+  width: 66.50%;
+  height:  66.50%;
+}
+}
+/* Handphone */
+@media (max-width: 576px) {
+
+.info img {
+  width: 50%;
+  height: 50%;
+}
+}
+
+
+.adesc {
+margin-bottom: 20px;
+}
+
+.info aside a:hover{
+background-color: #62cafe;
+}
+
+/*Popular Lesson*/
+
+.class-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.poptittle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(91, 198, 255);
+}
+
+.class-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  height: fit-content;
+}
+
+.class-card {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cccccc;
+  padding: 12px;
+ /* background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+}
+
+.class-card h2 {
+  color: #c54343;
+}
+
+.class-row .class-card img {
+  max-width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.moreless {
+      background-color: rgb(91, 198, 255);
+      padding: 10px;
+      color: rgb(255, 255, 255);
+      font-size: 10px;
+      margin-top: 20px;
+      text-align: center;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+}
+
+.class-container a:hover {
+background-color: #7bd0fa;
+}
+
+/*Our Team*/
+
+.top-article {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+padding: 0 35px;
+background-color: #dc14f2;
+}
+
+.top-article .ourteam h2 {
+margin: 50px;
+font-size: 40px;
+font-family: 'Roboto', sans-serif;
+color: white;
+}
+
+.wrapper {
+max-width: 1100px;
+width: 100%;
+max-height: 600px;
+position: relative;
+}
+
+.wrapper ion-icon {
+height: 32px;
+width: 32px;
+background: #ffffff;
+line-height: 50px;
+border-radius: 50%;
+cursor: pointer;
+position: absolute;
+font-size: 1.25rem;
+top: 50%;
+transform: translateY(-50%);
+box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.wrapper ion-icon:first-child {
+left: -22px;
+}
+.wrapper ion-icon:last-child {
+right: -22px;
+}
+
+.wrapper .carousel {
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 3) - 12px);
+gap: 16px;
+overflow: hidden;
+}
+
+.carousel :where(.card, .imej) {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.carousel.dragging .card {
+cursor: grab;
+user-select: none;
+}
+
+.carousel .card {
+height: 250px;
+list-style: none;
+background: #ffffff;
+border-radius: 8px;
+display: flex;
+cursor: pointer;
+padding-bottom: 15px;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.card .imej {
+background: #fe307b;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+.card .imej img {
+width: 140px;
+height: 140px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #ffffff;
+}
+
+.card h2 {
+font-weight: 500;
+font-size: 1.56rem;
+margin: 8px 0 5px;
+}
+
+.card span {
+color: #5c5757;
+font-size: 1.31rem;
+}
+
+@media screen and (max-width: 768px) {
+.wrapper .carousel {
+  grid-auto-columns: calc((100% / 2) - 9px);
+}
+}
+@media screen and (max-width: 576px) {
+.wrapper .carousel {
+  grid-auto-columns: 100%;
+}
+}
+
+/* Overlay */
+
+.overlay .content {
+  background: #ff8b32;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px 200px;
+  text-align: center;
+}
+
+.overlay .the-overlay {
+  padding: 10px;
+}
+
+.overlay .content h3 {
+  font-size: 28px;
+  color: white;
+}
+.overlay .content span {
+  font-size: 12px;
+  color: white;
+}
+
+
+/* What Parents Say */
+
+.comments {
+text-align: center;
+height: 340px;
+}
+
+.comments h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 32px;
+  text-align: center;
+  color: #37B6F6;
+}
+
+.comments .desc {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 40px;
+}
+
+.testimoni {
+  display: flex;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.comm {
+  margin-bottom: 15px;
+}
+
+.test {
+  width: 200px;
+  min-width: fit-content;
+  text-align: start;
+  padding: 8px;
+  border-style: outset;
+  border-radius: 10%;
+  border-width: thin;
+  border-color: #fe307b;
+  margin-left: 28px;
+  color: #5c5757;
+  flex: 0 0 calc(40%-200px);
+
+}
+.test span {
+  display: inline;
+}
+
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #de3c3caa;
+  padding-right: 20px;
+}
+
+.parent {
+  color: #00000072;
+}
+
+
+/* Our Partners Logo */
+
+.partners {
+background-color: #ffa8a8;
+text-align: center;
+width: 100%;
+height: fit-content;
+}
+
+.partners h1 {
+font-family: 'Roboto' sans-serif;
+font-size: 24px;
+padding: 32px;
+text-align: center;
+color: #ffffff;
+}
+
+.partners img {
+flex: 0 0 calc(50%-150px);
+margin: 24px;
+padding: 12px;
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+
+  .partners img {
+    width: 70%;
+    height:  70%;
+  }
+  }
+@media (max-width: 768px) {
+
+  .partners img {
+    width: 66.50%;
+    height:  66.50%;
+  }
+  }
+  /* Handphone */
+  @media (max-width: 576px) {
+  
+    .partners img {
+    width: 50%;
+    height: 50%;
+  }
+  }

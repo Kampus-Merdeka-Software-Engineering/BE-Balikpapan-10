@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Mogra&family=Oswald&family=Roboto:ital,wght@0,100;0,500;1,500&display=swap);
+
+html{
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body{
+    background-color: white;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.page-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(250, 247, 74, 0.5);
+}
+
+.page-title h1{
+    font-family: 'Mogra', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgb(128, 202, 245);
+    font-weight: 100;
+}
+
+.page-title p{
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(165, 214, 243);
+}
+
+main{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+
+.main-content{
+    width: 100%;
+    height: 1100px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20px;
+}
+
+.main-content img{
+    display:block;
+    margin: auto;
+    width: 740px;
+    height: 343px;
+}
+
+.main-content .lesson-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 740px;
+    /* text-align: left; */
+}
+
+.lesson-info .lesson-desc{
+    display: flex;
+    margin-left: 20px;
+}
+
+.lesson-desc p{
+    margin-right: 10px;
+}
+
+.lesson-desc i{
+    height: 20px;
+    margin-top: 16px;
+    margin-right: 3px;
+}
+
+.lesson-desc #btnLike{
+    border-style: none;
+    background-color: white;
+    padding: 0;
+    margin-top: 0;
+}
+
+.lesson-desc #btnLike:hover{
+    cursor: pointer;
+}
+
+.lesson-info #desc-text{
+    height: 200px;
+    background-color: gray;
+    /* color: white; */
+}
+
+.text-point{
+    height: 100px;
+    background-color: gray;
+}
+
+.lesson-tag{
+    display: flex;
+    margin-top: 40px;
+}
+
+.lesson-tag #share{
+    margin-left: 50px;
+}
+
+.lesson-tag .tags{
+    margin-left: 30px;
+}
+
+.side-content{
+    width: 100%;
+    height: 1100px;
+    border-left: thin;
+    border-color: rgb(222, 222, 223);
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-style: solid;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+form{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+form #search{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin: auto;
+    width: 365px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: rgb(243, 243, 243);
+    border-style: solid;
+    padding: 8px;
+    box-shadow: inset .3px .3px .3px .3px #f0f1f2;
+    outline: none;
+}
+
+.side-content ::placeholder{
+    color: rgb(181, 188, 192);
+    opacity: .8;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    /* background-color: blue; */
+    width: 360px;
+}
+
+.sidebar .date-bar, .age-bar, .level-bar, .rate{
+    display: flex;
+    border-style:solid;
+    border-width: thin;
+    border-color: rgb(222, 222, 223);
+    border-bottom: 0;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar .download{
+    border-style:solid;
+    border-color: rgb(222, 222, 223);
+    border-width: thin;
+    padding-left: 10px;
+}
+
+.popular-lesson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 360px;
+    padding-top: 70px;
+}
+
+.popular-lesson p{
+    display: flex;
+    justify-content: center;
+}
+
+.popular-lesson span{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        padding: 2%;
+        grid-template-columns: 40% 15% 40%;
+        column-gap: 20px;
+    }
+    .main-content{
+        width: 100%;
+        /* background-color: green; */
+        height: 100%;
+    }
+    .main-content img{
+        width: 100%;
+        height: 20%;
+    }
+    .lesson-info{
+        width: 100%;
+    }
+    .lesson-info #desc-text{
+        width: 50%;
+        /* background-color: red; */
+    }
+
+    .lesson-info .text-point{
+        width: 50%;
+    }
+
+    .lesson-tag{
+        display: flex;
+        width: 50%;
+        margin: 0;
+    }
+
+    .lesson-tag .tags{
+        margin: 0;
+    }
+
+    .side-content{
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        /* background-color: blue; */
+    }
+    form #search{
+        width: 95%;
+        /* float: left; */
+    }
+
+    .sidebar{
+        width: 95%;
+    }
+
+    .popular-lesson{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        padding: 2%;
+        grid-template-columns: 40% 15% 40%;
+        column-gap: 15px;
+    }
+
+    .lesson-info #desc-text{
+        width: 44%;
+        /* background-color: red; */
+    }
+
+    .lesson-info .text-point{
+        width: 44%;
+    }
+
+}

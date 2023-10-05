@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    z-index: -1;
+    /* overflow-x: hidden; */
+}
+
+nav{
+    background-color: rgb(165, 214, 243);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    /* overflow: hidden; */
+    z-index: 999;
+    /* overflow: visible; */
+    justify-content: space-around;
+}
+
+nav img{
+    margin-left: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    padding: 0;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav button{
+    justify-content: space-between;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .classes a, .team a{
+    font-size: 0.8em;
+    font-family: 'Roboto', sans-serif;
+} */
+
+/* .nav-menu li a{
+    display: block;
+} */
+/* 
+nav li, .btn-classes, .btn-teachers{
+    font-size: large;
+    margin-left: 70px;
+    font-family: 'Roboto', sans-serif;
+} */
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    /* float: right; */
+    margin-right: 20px;
+}
+
+ul #home{
+    color: rgb(255, 8, 8);
+    text-decoration: none;
+}
+
+ul #home:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+ul #about{
+    color: rgb(253, 250, 102);
+    text-decoration: none;
+}
+
+ul #about:hover{
+    color: white;
+    transition: 0.2s;
+}
+/* 
+.show{
+    display: block;
+} */
+
+.drop-classes .class{
+    color: rgb(253, 137, 5);
+    background-color: rgb(165, 214, 243);
+    border-style: none;
+    /* font-size: large; */
+    margin-left: 0;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.drop-classes button:hover{
+    color: antiquewhite;
+    transition: 0.2s;
+}
+
+.classes-content{
+    position: fixed;
+    background-color: rgb(226, 177, 131);
+    min-width: 150px;
+    /* padding: 10px; */
+    display: none;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-classes:hover .classes-content{
+    display: block;
+}
+
+.classes-content a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.classes-content a:hover{
+    background-color: rgb(253, 154, 5);
+    transition: 0.2s;
+}
+/* ul #teachers{
+    color: ;
+} */
+
+.drop-team .team{
+    color: rgb(198, 113, 247);
+    background-color: rgb(165, 214, 243);
+    border-style: none;
+    /* font-size: large; */
+    margin-left: 0;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.team-content{
+    position: fixed;
+    background-color: rgb(176, 204, 247);
+    min-width: 150px;
+    /* padding: 10px; */
+    display: none;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.team-content a:hover{
+    background-color: rgb(67, 154, 253);
+    transition: 0.2s;
+}
+
+.drop-team button:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+.drop-team:hover .team-content{
+    display: block;
+}
+
+.team-content a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-left: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+ul #contact{
+    color: rgb(25, 212, 50);
+    text-decoration: none;
+}
+
+ul #contact:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+ul #navLogin, #navSignUp{
+    display: none;
+    text-decoration: none;
+}
+
+ul #navLogin{   
+    color: white;
+    transition: 0.2s;
+}
+
+ul #navSignUp{
+    color: white;
+    transition: 0.2s;
+}
+
+li i{
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.nav-right i{
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+}
+
+.nav-right .button-login, #signup{
+    font-size: 1em;
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-style: solid;
+    border-width: thin;
+    padding: 5px;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.nav-right .button-login{
+    color: rgb(253, 250, 102);
+}
+
+.nav-right .button-login:hover{
+    cursor: pointer;
+}
+
+.nav-right #signup:hover{
+    cursor: pointer;
+}
+
+.nav-right p{
+    color: #fff;
+}
+
+.nav-right .icon{
+    display: none;
+    margin-top: 0px;
+}
+
+.icon i{
+    margin-right: 0;
+}
+
+/* hamburger-menu */
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    height: 22px;
+    width: 40px;
+    top: -4px;
+    left: -13px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: rgba(253, 250, 102, 0.5);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* animasi hamburger */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: rgba(253, 250, 102, 0.5);
+    transform: rotate(45deg) translate(1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: rgba(253, 250, 102, 0.5);
+    transform: rotate(-45deg) translate(2px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    display: none;
+}
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav{
+        justify-content: space-between;
+    }
+    nav ul{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    nav ul{
+        position: absolute;
+        right: 0;
+        /* top:50px;  */
+        top: 0;
+        flex-direction: column;
+        background-color: rgb(165, 214, 243);
+        height: 100vh;
+        width: 40%;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide{
+        opacity: 1;
+        position: absolute;
+        right: 0;
+        /* top:50px;  */
+        top: 0;
+        flex-direction: column;
+        background-color: rgb(165, 214, 243);
+        height: 100vh;
+        width: 40%;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translateX(0);
+    }
+
+    .nav-right{
+        display: none;
+    }
+
+    ul #navLogin, #navSignUp{
+        display: block;
+    }
+
+    .menu-toggle{
+        display: flex;
+    }
+}
+
+.popup{
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-form{
+    height: 400px;
+    width: 400px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.popup-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: auto;
+    width: 90%;
+    /* background-color: blue; */
+}
+
+.popup-form .close{
+    display: flex;
+    float: right;
+    font-size: 30px;
+    background-color: white;
+    border-style: none;
+    color: rgb(180, 170, 170);
+}
+
+.popup-form .close:hover{
+    color: red;
+}
+
+.popup-form h1{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.popup .bottom-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input{
+    height: 15px;
+    margin-bottom: 20px;
+    border-color: rgb(222, 222, 223);
+    border-style: solid;
+    padding: 8px;
+    box-shadow: inset .3px .3px .3px .3px #f0f1f2;
+}
+
+.bottom-form .loginBtn{
+    height: 30px;
+    width: 90%;
+    margin-bottom: 10px;
+    background-color: rgb(96, 120, 255);
+    border-style: none;
+    color: white;
+}
+
+.bottom-form button:hover{
+    background-color: rgb(66, 93, 250);
+    transition-duration: .2;
+}
+
+.bottom-form a{
+   text-decoration: none;
+   color: rgb(96, 120, 255);
+}
+
+.bottom-form #forgot-pass{
+    margin-bottom: 40px;
+}

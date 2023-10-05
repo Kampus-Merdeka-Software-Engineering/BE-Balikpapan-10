@@ -1,4 +1,5 @@
 const { userService } = require('../services');
+const path = require('path');
 
 async function createUser(req, res) {
     const user = req.body;
@@ -15,7 +16,12 @@ async function editUser(req, res) {
     res.status(200).json(editedUser);
 }
 
+async function editProfile(req, res) {
+    res.sendFile(path.join(__dirname, '../public/editProfile.html'));
+}
+
 module.exports = {
     createUser,
-    editUser
+    editUser,
+    editProfile
 }
