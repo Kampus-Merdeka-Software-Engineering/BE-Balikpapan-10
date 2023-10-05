@@ -31,7 +31,9 @@ async function createLesson(lesson){
     }
 
     catch (error) {
+        console.error(error);
 
+        throw new Error()
     }
 }
 
