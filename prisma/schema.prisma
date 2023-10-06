@@ -10,7 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Lesson_List {
+model lesson {
   id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
   title String
@@ -20,7 +20,7 @@ model Lesson_List {
   image String
 }
 
-model Team {
+model team {
   id Int @id @default(autoincrement())
   createdAt DateTime @default(now())
   name String

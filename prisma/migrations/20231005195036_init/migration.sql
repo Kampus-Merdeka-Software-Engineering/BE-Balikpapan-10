@@ -1,5 +1,5 @@
 -- CreateTable
-CREATE TABLE `Lesson_List` (
+CREATE TABLE `lesson` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `title` VARCHAR(191) NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE `Lesson_List` (
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 -- CreateTable
-CREATE TABLE `Team` (
+CREATE TABLE `team` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `name` VARCHAR(191) NOT NULL,
