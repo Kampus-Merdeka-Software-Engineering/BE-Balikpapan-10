@@ -15,8 +15,8 @@ async function getTeam(req, res) {
 
 async function createTeam(req, res) {
   try {
-    const lesson = req.body;
-    const createdTeam = await teamService.createTeam(lesson);
+    const team = req.body;
+    const createdTeam = await teamService.createTeam(team);
     res.status(201).json({ message: "Team has been created successfully" });
   } catch (error) {
     console.error(error);

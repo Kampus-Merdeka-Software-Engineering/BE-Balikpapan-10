@@ -7,13 +7,13 @@ async function subscribeLesson(lesson, lessonId) {
         id_lesson: lessonId,
       },
       data: {
-        email: user.email,
+        id_user: userId,
       },
     });
     return subscribeUser;
   } catch {
-    // console.error(error);
-    // throw new Error();
+    console.error(error);
+    throw new Error("Failed to subscribe to the lesson");
   }
 }
 
