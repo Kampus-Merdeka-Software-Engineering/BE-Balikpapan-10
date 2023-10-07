@@ -28,3 +28,10 @@ model user{
   email String
   password String
 }
+
+model message{
+  id_message Int @id @default (autoincrement())
+  name String
+  email String
+  message String @db.Text
+}

@@ -15,7 +15,15 @@ async function createLesson(req, res){
     res.status(201).json(createLesson);
 }
 
+async function getLessonById(req, res){
+    const lesson_id = Number(req.params.id);
+    const getLesson = await lessonService.getLessonById(lesson_id);
+
+    res.status(200).json(getLesson);
+}
+
 module.exports = {
     getLessons,
-    createLesson
+    createLesson,
+    getLessonById
 };

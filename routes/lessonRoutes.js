@@ -4,5 +4,6 @@ const router = express.Router();
 
 router.get('/lessons', lessonController.getLessons);
 router.post('/lessons', lessonController.createLesson);
+router.get('/lessonDetails/:id', lessonController.getLessonById);
 
 module.exports = router;

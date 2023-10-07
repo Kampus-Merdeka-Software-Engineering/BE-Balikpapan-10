@@ -37,7 +37,26 @@ async function createLesson(lesson){
     }
 }
 
+async function getLessonById(lesson_id){
+    try {
+        const getLesson = await prisma.lesson.findUnique({
+            where: {
+                id: lesson_id
+            }
+        })
+
+        return getLesson
+    }
+
+    catch (error) {
+        console.error(error);
+
+        throw new Error()
+    }
+}
+
 module.exports = {
     getAllLesson,
-    createLesson
+    createLesson,
+    getLessonById
 };
