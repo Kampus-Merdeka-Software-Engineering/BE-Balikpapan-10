@@ -40,6 +40,8 @@ model team {
   image_people String
   image_github String
   image_linkedin String
+  profil_github String
+  profil_linkedin String
 }
 
 model user {
